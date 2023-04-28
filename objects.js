@@ -5,7 +5,7 @@
 //   { name: 'Charlie', age: 14 },
 //   { name: 'Max', age: 19 },
 // ];
-function getAdultsNames(people) {
+function peopleNames(people) {
     return people.filter(function(person) {
       return person.age >= 18;
     }).map(function(person) {
@@ -20,7 +20,7 @@ function getAdultsNames(people) {
     { name: 'Max', age: 19 },
   ];
   
-  const adultsNames = getAdultsNames(people);
+  const adultsNames = peopleNames(people);
   console.log(adultsNames); 
   
   
@@ -66,10 +66,10 @@ const students = [  { name: 'John', scores: [90, 80, 85] },
   { name: 'Jill', scores: [85, 90, 84] },
 ];
 
-const filterStudentsByScore = (studentsArray, minimumScore) =>
+const StudentsByScore = (studentsArray, minimumScore) =>
  studentsArray.filter(student => student.scores.reduce((a, b)));
 
-const filteredStudents = filterStudentsByScore(students, 85);
+const filteredStudents = StudentsByScore(students, 85);
 console.log(filteredStudents); 
 
 
