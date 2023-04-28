@@ -60,17 +60,18 @@ const groupProductsByCategory = (productsArray) => {
 //   { name: 'Jim', scores: [70, 80, 75] },
 //   { name: 'Jill', scores: [85, 90, 84] },
 // ];
-// const students = [  { name: 'John', scores: [90, 80, 85] },
-//   { name: 'Jane', scores: [95, 92, 88] },
-//   { name: 'Jim', scores: [70, 80, 75] },
-//   { name: 'Jill', scores: [85, 90, 84] },
-// ];
+const students = [  { name: 'John', scores: [90, 80, 85] },
+  { name: 'Jane', scores: [95, 92, 88] },
+  { name: 'Jim', scores: [70, 80, 75] },
+  { name: 'Jill', scores: [85, 90, 84] },
+];
 
-// const filterStudentsByScore = (studentsArray, minimumScore) =>
-//  studentsArray.filter(student => student.scores.reduce((a, b)));
+const filterStudentsByScore = (studentsArray, minimumScore) =>
+ studentsArray.filter(student => student.scores.reduce((a, b)));
 
-// const filteredStudents = filterStudentsByScore(students, 85);
-// console.log(filteredStudents); 
+const filteredStudents = filterStudentsByScore(students, 85);
+console.log(filteredStudents); 
+
 
 
 
